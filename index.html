@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>DMalagueta</title>
+        </head>
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+        <!-- Css Styling -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+            body {
+                color: #ffffff;
+                font-family: 'Comfortaa', cursive;
+                background-image: url("bg.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                min-height: 90vh;
+                display: flex;
+            }
+
+            .card {
+                max-width: 340px;
+                margin: auto;
+                overflow-y: auto;
+                position: relative;
+                z-index: 1;
+                overflow-x: hidden;
+                background-color: rgba(88, 88, 88, 0.932);
+                display: flex;
+                flex-direction: column;
+                border-radius: 10px;
+                box-shadow: 0 0 0 2px rgba(255, 254, 254, 0.575);
+            }
+
+            .header {
+                position: relative;
+                display: flex;
+                height: 200px;
+                flex-shrink: 0;
+                width: 100%;
+                transition: 0.3s;
+                color: #000000;
+                
+            }
+
+            .cover {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                height: 160px;
+                top: -20%;
+                left: 0;
+                background-size: cover;
+                background-position: center;
+                transform: scale(1.2);
+                transition: 0.5s;
+            }
+
+            .avatar {
+                width: 100px;
+                height: 100px;
+                box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+                border-radius: 50%;
+                object-position: center;
+                object-fit: cover;
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%) translateY(-64px);
+            }
+
+            .name {
+                position: absolute;
+                bottom: 0;
+                font-size: 25px;
+                font-weight: 500;
+                text-align: center;
+                white-space: nowrap;
+                transform: translateY(-10px) translateX(-50%);
+                left: 50%;
+            }
+
+            .job {
+                position: absolute;
+                bottom: 0;
+                font-size: 10px;
+                white-space: nowrap;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+                margin: 0;
+                left: 50%;
+                transform: translateX(-50%) translateY(-7px);
+            }
+
+            .main {
+                position: relative;
+                flex: 1;
+                display: flex;
+                padding-top: 5px;
+                flex-direction: column;
+            }
+
+            .subtitle {
+                font-weight: 700;
+                font-size: 13px;
+                margin-bottom: 20px;
+                text-align: center;
+                -webkit-text-stroke: 1px rgba(0, 0, 0, 0.384);
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .desc {
+                line-height: 1.6;
+                color: #ffffff;
+                font-size: 14px;
+                margin: 0;
+                font-weight: 400;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .social {
+                display: flex;
+                align-items: center;
+                padding: 0 20px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                justify-content: center;
+            }
+
+            .social a {
+                color: #ffffff;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 30px;
+                text-decoration: none;
+                margin-right:10px;
+            }
+
+            .social a:hover{
+                color: rgb(0, 0, 0);
+            }
+            
+            .linha{
+              border: 0.01em solid rgba(255, 255, 255, 0.664);
+            }
+            
+        </style>
+        <body>
+            <div class="card" data-state="#about">
+                <div class="header">
+                  <!-- Foto -->
+                  <img class="avatar" src="foto.png" alt="avatar" />
+                  <h1 class="name">Diogo Malagueta</h1>
+                  <h2 class="job">Web Developer</h2>
+                </div>
+                <div class="main">
+                  <div class="card-section is-active" id="about">
+
+                    
+                    <!-- descriçao -->
+                    <div class="content">
+                      <div class="subtitle">Website under maintenance</div>
+                      <p class="desc">
+                          I'm a Junior Web Developer currently studying Web Development at ETIC (Escola de Tecnologias Inovação e Criação) and I'm always up for a good challenge so feel free to contact me.
+                      </p>
+                    </div>
+
+                    <hr class="linha">
+                    <!-- Butoes social-->
+                    <div class="social">
+                      <a href="https://www.linkedin.com/in/diogomalagueta/"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="https://github.com/DMalagueta" target="_blank"><i class="fab fa-github"></i></a>
+                      <a href="https://www.instagram.com/dimalagueta/" target="_blank"><i class="fab fa-instagram"></i></a>
+                      
+                    </div>
+                </div>
+                  
+            </div>
+            
+            
+        </body>
+</html>
