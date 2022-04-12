@@ -4,4 +4,4 @@ Personal website maintenance page
 
 # Demo
 
-https://diogomalagueta.com/
+https://dmalagueta.github.io/dm-maintenance/
